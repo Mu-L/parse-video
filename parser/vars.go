@@ -189,6 +189,7 @@ var videoSourceInfoMapping = map[string]videoSourceInfo{
 		VideoShareUrlDomain: []string{
 			"www.xiaohongshu.com",
 			"xhslink.com",
+			"xhslink.cn",
 		},
 		VideoShareUrlParser: redBook{},
 	},
