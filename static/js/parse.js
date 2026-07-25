@@ -48,7 +48,7 @@ async function setValue() {
 
             jsonObj.data.images.forEach(function (item, index) {
                 successHtml += '<div style="display: inline-block; margin: 1em; text-align: center;">';
-                successHtml += '<img src="' + item.url + '" style="width: 160px; display: block; margin-bottom: 0.5em;"/>';
+                successHtml += '<img src="' + item.url + '" referrerpolicy="no-referrer" style="width: 160px; display: block; margin-bottom: 0.5em;"/>';
                 successHtml += '<div style="margin-top: 0.5em;">';
                 successHtml += '<a class="mdui-btn mdui-btn-raised" href="' + item.url + '" target="_blank" download="image_' + (index + 1) + '.' + getImageExtension(item.url) + '" referrerpolicy="no-referrer" style="text-transform: none; margin-right: 0.5em;"><span>下载图片</span></a>';
                 // 如果 item.live_photo_url 不为空， 显示下载按钮
